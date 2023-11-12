@@ -22,7 +22,7 @@ def msg(request):
 
 class BookingViewSet(ModelViewSet):
     permission_classes = [IsAuthenticated]
-    authentication_classes = [TokenAuthentication]
+    #authentication_classes = [TokenAuthentication]
     queryset = Booking.objects.all()
     serializer_class = BookingSerializer
     
