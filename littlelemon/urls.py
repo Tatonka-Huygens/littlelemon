@@ -23,13 +23,6 @@ from rest_framework.routers import DefaultRouter
 router = DefaultRouter()
 router.register(r'tables', views.BookingViewSet)
 
-'''
-router1 = DefaultRouter()
-router1.register(r'users', views.UserViewSet, basename='users')
-'''
-   #
-   #path('', include(router1.urls)),
-   #path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
 
 urlpatterns = [
    path('admin/', admin.site.urls),
