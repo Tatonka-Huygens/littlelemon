@@ -8,8 +8,9 @@ class Booking(models.Model):
     number_of_guests = models.SmallIntegerField(null=False)
     booking_date = models.DateTimeField()
 
-    def __str__(self): 
-        return f'{self.name} : {self.booking_date}'
+    def __str__(self) -> str:
+        return f'{self.name} for {self.number_of_guests} guests on {self.booking_date}'
+
 
 
 # Add code to create Menu model
@@ -19,7 +20,6 @@ class Menu(models.Model):
    price = models.DecimalField(max_digits=10,decimal_places=2) 
    inventory = models.IntegerField(null=False) 
 
-   def __str__(self):
-       return f'{self.title} : {str(self.price)}'
-   
+   def __str__(self) -> str: 
+       return f'{self.title} : {self.price}'
    
