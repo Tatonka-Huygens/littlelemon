@@ -29,14 +29,14 @@ class BookingViewSet(ModelViewSet):
     
 class MenuItemsView(ListCreateAPIView):
     permission_classes = [IsAuthenticated]
-    authentication_classes = [TokenAuthentication]
+    #authentication_classes = [TokenAuthentication]
     queryset = Menu.objects.all()
     serializer_class = MenuItemSerializer
     
   
 class SingleMenuItemView(RetrieveUpdateAPIView,DestroyAPIView):
     permission_classes = [IsAuthenticated]
-    authentication_classes = [TokenAuthentication]
+    #authentication_classes = [TokenAuthentication]
     queryset = Menu.objects.all()
     serializer_class = MenuItemSerializer
 
