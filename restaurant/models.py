@@ -9,7 +9,10 @@ class Booking(models.Model):
     booking_date = models.DateTimeField()
 
     def __str__(self) -> str:
-        return f'{self.name} for {self.number_of_guests} guests on {self.booking_date}'
+        if self.number_of_guests == 1:
+            return f'{self.name} for {self.number_of_guests} guest on {self.booking_date}'
+        else:
+            return f'{self.name} for {self.number_of_guests} guests on {self.booking_date}'
 
 
 
