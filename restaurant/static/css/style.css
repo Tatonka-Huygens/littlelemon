@@ -136,7 +136,7 @@ input{
   }
 
 #hero {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url('../img/Lucho5.jpg');
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url('../img/restaurant_inside.jpg');
     background-size: cover;
     background-position: 75%;
     color: white;
